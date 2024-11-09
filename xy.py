@@ -6,8 +6,8 @@ def f(x, y):
     return np.sqrt(x) + np.sqrt(y) - 5 + np.sqrt(x * y) - 5
 
 # Define the range and resolution of the meshgrid
-x_vals = np.linspace(0.01, 10, 1000)  # Avoid 0 to prevent sqrt(0) issues
-y_vals = np.linspace(0.01, 10, 1000)
+x_vals = np.linspace(0.01, 10, 1010)  # Avoid 0 to prevent sqrt(0) issues
+y_vals = np.linspace(0.01, 10, 1010)
 
 # Create the 2D meshgrid
 X, Y = np.meshgrid(x_vals, y_vals)
